@@ -1,10 +1,53 @@
 .header-logo{
-    padding: 40px;
-    font-size: 38px;
+    padding: 40px 80px 40px 80px;
+    font-size: 40px;
     font-family:Cambria;
-    display: flex;  
-    justify-content: center;
+    
 }
+
+.header-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 400px 10px 10px;
+}
+
+.search-bar{
+    width: 700px;
+    padding: 5px 10px;
+    background-color: rgb(138, 6, 6);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    padding: 24 px 20px;
+}
+
+.img-search-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.button-search{
+    border: 0;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+   
+}
+.button-search:hover{
+    background-color: rgba(212, 204, 204, 0.24);
+    cursor: pointer;
+} 
+
 
 .tech-button{
     font-size: 15px;
@@ -18,7 +61,7 @@
 
 .tech-column{
     padding: 40px 40px 215px 40px;
-    width: 150px;
+    width: 250px;
     height: 50px;
     display: flex;
     flex-flow: column;
@@ -39,17 +82,26 @@
     justify-content: center;
 }
 
-.main-center{
+.main{
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.image-1{
-    width: 700px;
-    height: 400px;
+.main-section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 150px 1px 1px;
 }
-  
+
+.image-1{
+    width: 1000px;
+    height: 500px;
+}
+
+
   
   
   
