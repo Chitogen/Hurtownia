@@ -28,13 +28,13 @@ main{
 
 header{
     height: 125px;
-    width: fit-content;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 290px 10px 10px;
-    border-bottom: inset;
-    border-bottom-color: white;
+    border-bottom: 0.170rem inset;
+    border-bottom-color: rgba(83, 85, 83,0.4);
     margin: 0 auto;
     
 }
@@ -56,7 +56,7 @@ header{
     display: flex;
     align-items: center;
     border-width: 2px;
-    border-style: dashed;
+    border-style:groove;
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
     
@@ -92,33 +92,41 @@ header{
     cursor: pointer;
 } 
 
-.other-buttons{
+.btn{
     position: relative;
-    height: 2.5em;
-    width: 5em;
-    font-family: system-ui, -apple-system, sans-serif;
-    font-size: 1em;
-    border: none;
     background: none;
-    cursor: pointer;
-    padding: 50px;
-    transition: 0.4s;
+    color:  black;
+    height: 2.5rem;
+    width: 5rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;   
 }
 
-.other-button ::after {
-    content: "";
-    height: 100%;
-    width: 100%;
+.btn::after{
+    content: '';
     position: absolute;
-    border-bottom-color: solid red;
-    left: 0;
-    top: 0;
-    transition: 0.8s;
-    
-}
-.other-button:hover ::after{
     width: 100%;
+    height: 0.175rem;
+    background: red;
+    left: 0;
+    bottom: 0;
 }
+.other-buttons::after {
+    transform: scale(0,1);
+    transform-origin: 0% 100%;
+    transition: 0.5s ease;
+}
+.other-buttons:hover::after{
+    transform: scale(1,1);
+}
+
+
+
+
+
+
 
 
    
