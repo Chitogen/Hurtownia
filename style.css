@@ -2,6 +2,9 @@ html{
     scrollbar-width: normal;
     
 }
+:root{
+    --color:red;
+}
 body{
     margin: 0;
     padding: 0;
@@ -15,53 +18,80 @@ body{
     background-size: cover;
     
 }
-main{
-    height: 200vh;
-    width: fit-content ;
-    margin: 0 auto;
-    border-width: 2px;
-    border-color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.7);
-    background-position-x:right;
-    background-size: cover;
-}
+
+
+
+
+/*-----header-----*/
 
 header{
-    height: 125px;
+    min-height: 100vh;
     width: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 290px 10px 10px;
     border-bottom: 0.170rem inset;
     border-bottom-color: rgba(83, 85, 83,0.4);
-    margin: 0 auto;
+    box-shadow:
+    0px 2.8px 2.2px rgba(0, 0, 0, 0.098),
+    0px 6.7px 5.3px rgba(0, 0, 0, 0.141),
+    0px 12.5px 10px rgba(0, 0, 0, 0.175),
+    0px 22.3px 17.9px rgba(0, 0, 0, 0.209),
+    0px 41.8px 33.4px rgba(0, 0, 0, 0.252),
+    0px 100px 80px rgba(0, 0, 0, 0.35)
+    ;
     
+    
+}
+
+.div-center{
+    position: relative;
+    min-height: auto;
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 50px 50px 50px;
+    border: 0.170rem inset;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow:
+    0px 2.8px 2.2px rgba(0, 0, 0, 0.098),
+    0px 6.7px 5.3px rgba(0, 0, 0, 0.141),
+    0px 12.5px 10px rgba(0, 0, 0, 0.175),
+    0px 22.3px 17.9px rgba(0, 0, 0, 0.209),
+    0px 41.8px 33.4px rgba(0, 0, 0, 0.252),
+    0px 100px 80px rgba(0, 0, 0, 0%);
+    z-index: 3;
 }
 
 .header-logo{
-    width: 350px;
-    padding: 14px 25px 14px 8px;;
-    font-size: 40px;
-    font-family: system-ui, -apple-system, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 200px 50px;
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
     cursor: pointer;
     margin: 0 ;
-    
+    z-index: 2;
 }
 
 .search-bar{
+    position: relative;
     width: 650px;
+    margin: 0 auto;
     padding: 5px 10px 5px 20px;
     background-color:rgba(138, 6, 6);
     display: flex;
+    justify-content: center;
     align-items: center;
     border-width: 2px;
     border-style:groove;
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
-    
-    
-    
+    z-index: 2;
+      
 }
 
 .search-bar input{
@@ -80,36 +110,78 @@ header{
 }
 
 .button-search{
-    border: 0;
+    border: none;
+    background: none;
     border-radius: 50%;
     height: 60px;
     width: 60px;
    
 }
-
 .button-search:hover{
     background-color: rgba(212, 204, 204, 0.24);
     cursor: pointer;
-} 
+}
+
+.video-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit:cover;
+    z-index: 1;
+    
+    
+    
+}
+
+
+/*-----main-----*/
+
+main{
+    min-height: 200vh;
+    width: fit-content ;
+    margin: 0 auto;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.7);
+    background-position-x:right;
+    background-size: cover;
+}
+
+.main-section-1{
+    height: 85px;
+    position:relative;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-top: 10px;
+    border-top-style: double;
+    border-top-width: 10px;
+    border-color: rgba(83, 85, 83,0.2);
+    border-bottom: 10px;
+    border-bottom-style: ridge;
+    background-color: white;
+}
 
 .btn{
     position: relative;
     background: none;
     color:  black;
-    height: 2.5rem;
-    width: 5rem;
+    min-height: 2.5rem;
+    width: 7rem;
     font-family: system-ui, -apple-system, sans-serif;
     font-size: 1.1rem;
     border: none;
-    outline: none;   
+    outline: none;
+    cursor: pointer;   
 }
-
 .btn::after{
     content: '';
     position: absolute;
     width: 100%;
-    height: 0.175rem;
-    background: red;
+    min-height: 0.175rem;
+    background: var(--color);
     left: 0;
     bottom: 0;
 }
@@ -122,6 +194,137 @@ header{
     transform: scale(1,1);
 }
 
+.main-section-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 150px 1px 1px;
+}
+
+.tech-button{
+    font-size: 15px;
+    padding : 10px 10px 10px 10px;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.tech-column{
+    padding: 40px 40px 494px 40px;
+    width: 270px;
+    height: 50px;
+    display: flex;
+    flex-flow: column; 
+}
+
+.items{
+    padding: 40px 10px 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-img{
+    display: flex;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.tech-button-img{
+    height: 20px;
+    width: 20px;
+    padding-right: 10px ;
+}
+
+
+.tech-button-arrow-1{
+    height: 20px;
+    width: 20px;
+    padding-left: 119px;
+    
+    
+}
+.tech-button-arrow-2{
+    height: 20px;
+    width: 20px;
+    padding-left: 138px;
+    
+}
+.tech-button-arrow-3{
+    height: 20px;
+    width: 20px;
+    padding-left: 23px;
+    
+}
+.tech-button-arrow-4{
+    height: 20px;
+    width: 20px;
+    padding-left: 136px;
+    
+}
+.tech-button-arrow-5{
+    height: 20px;
+    width: 20px;
+    padding-left: 46px;
+    
+}
+.tech-button-arrow-6{
+    height: 20px;
+    width: 20px;
+    padding-left: 136px;
+    
+}
+.tech-button-arrow-7{
+    height: 20px;
+    width: 20px;
+    padding-left: 131px;
+    
+}
+.tech-button-arrow-8{
+    height: 20px;
+    width: 20px;
+    padding-left: 164px;
+    
+}
+.tech-button-arrow-9{
+    height: 20px;
+    width: 20px;
+    padding-left: 77px;
+    
+}
+.tech-button-arrow-10{
+    height: 20px;
+    width: 20px;
+    padding-left: 95px;
+    
+}
+.tech-button-arrow-11{
+    height: 20px;
+    width: 20px;
+    padding-left: 156px;
+    
+}
+.tech-button-arrow-12{
+    height: 20px;
+    width: 20px;
+    padding-left: 73px;
+    
+}
+.tech-button-arrow-13{
+    height: 20px;
+    width: 20px;
+    padding-left: 26px;
+    
+}
+
+.image-1{
+    width: 900px;
+    height: 500px;
+    border-style:groove;
+    border-radius: 10px;
+    border-color: black;
+    
+}
 
 
 
