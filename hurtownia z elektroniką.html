@@ -5,36 +5,151 @@
         <meta name="viewpoint" content="width=device-width , initial-scale1"/>
         <title>Hurtownia z Elektroniką</title>  
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"/>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="center.css">
     </head>
     <body>
-        <div class="conteiner">
-            <header>
+       <header> 
+            <div class="conteiner">
                 <div class="header-bar">
-                    <nav class="div-left">
-                        <img class="img-logo" src="images/Hurtownia Chitogen-logos.jpeg" >
+                    <div class="w3-teal div-main-logo">
+                        <button class="w3-teal" onclick="w3_open()"><p style="color:var(--color1);">☰</p></button>
+                        <h2 class="img-logo">CHO</h2>    
+                    </div>
+                    <nav class="div-aboutcompany">
+                        <div class="flex">
+                            <div class="flex1">
+                                <button class="btn1 header-button">Home</button>
+                            </div>
+                            <div class="flex1">
+                                <button class="btn1 header-button">About</button>
+                            </div>
+                            <div class="flex1">
+                                <button class="btn1 header-button">Contact</button>
+                            </div>
+                            <div class="flex1">
+                                <button class="singin">Sing in</button>
+                                <p style="color: var(--color1); cursor:default;">/</p>
+                                <button class="login">Log in</button>
+                            </div>
+                        </div>
                     </nav>
-                    <nav class="div-right">
-                        <button class="btn1 header-button">Home</button>
-                        <button class="btn1 header-button">About</button>
-                        <button class="btn1 header-button">Contact</button>
+                </div>    
+                <div class="sidebar" style="display:none" id="mySidebar">
+                    <nav>
+                    <button onclick="w3_close()" class="close">Close &times;</button>
+                        <div>
+                            <a href="#" class="sidebar-item w3-button">Link 1</a>
+                        </div>
+                        <div>
+                            <a href="#" class="sidebar-item w3-button">Link 2</a>
+                        </div>
+                        <div>
+                            <a href="#" class="sidebar-item w3-button">Link 3</a>
+                        </div>
                     </nav>
                 </div>
                 <nav class="div-center">
-                    <h1 class="header-logo">Hurtownia Chitogen</h1>
-                    <form action="" class="search-bar">
-                        <input type="text" placeholder="   search" name="q">
-                        <button type="submit" class="button-search"><img class="img-search-icon" src="images/search-icon.png"></button>
-                    </form>    
+                    <h1 class="name-company">Hurtownia Chitogen</h1>
+                    <div class="div-menu-search-center">
+                        <div class="div-menu">
+                            <button class="button-menu">
+                                <img class="menu" src="images/menu.png">
+                            </button>
+                            <nav class="dropdown-content">
+                                <ul class="tech-column">
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/computer.png">
+                                        <li>Komputery</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>    
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/laptop.png">
+                                        <li>Laptopy</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/smartphone.png">
+                                        <li>Smartfony i Smartwatche</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/console.png">
+                                        <li>Konsole</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/headphones.png">
+                                        <li>Słuchawki i Mikrofony</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/speaker.png">
+                                        <li>Głośniki</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/monitor.png">
+                                        <li>Monitory</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/games.png">
+                                        <li>Gry</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/RTV.png">
+                                        <li>RTV i Telewizory</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button> 
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/camera.png">
+                                        <li>Foto i Kamery</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/AGD.png">
+                                        <li>AGD</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/sport.png">
+                                        <li>Sport i Rekreacja</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                    <button class="tech-button">
+                                        <img class="tech-button-img" src="images/software.png">
+                                        <li>Akcesoria Komputerowe</li>
+                                        <img class="tech-button-arrow" src="images/arrow.png">
+                                    </button>
+                                </ul> 
+                            </nav>      
+                        </div>       
+                        <form action="" class="search-bar">
+                            <input type="text" placeholder="   search" name="q">
+                            <button type="submit" class="button-search"><img class="img-search-icon" src="images/search-icon.png"></button>
+                        </form>
+                    </div>    
                 </nav>
                 <div class="overlay"></div>  
                     <video autoplay loop muted plays-inline class="video-background">
                         <source src="video/video-background.mp4">
                     </video>
                 </div>
-                             
-            </header>  
+            </div>
+            <script>
+                function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                }
+
+                function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                }
+            </script>
+       </header>
             <main>
                 <section >
                     <nav class="main-section-1">
@@ -45,80 +160,35 @@
                     </nav>
                 </section>      
                 <section class="main-section-2" >
-                    <ul class="tech-column">
-                        <nav>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/computer.png">
-                                <li>Komputery</li>
-                                <img class="tech-button-arrow-1" src="images/arrow.png">
-                            </button>    
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/laptop.png">
-                                <li>Laptopy</li>
-                                <img class="tech-button-arrow-2" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/smartphone.png">
-                                <li>Smartfony i Smartwatche</li>
-                                <img class="tech-button-arrow-3" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/console.png">
-                                <li>Konsole</li>
-                                <img class="tech-button-arrow-4" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/headphones.png">
-                                <li>Słuchawki i Mikrofony</li>
-                                <img class="tech-button-arrow-5" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/speaker.png">
-                                <li>Głośniki</li>
-                                <img class="tech-button-arrow-6" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/monitor.png">
-                                <li>Monitory</li>
-                                <img class="tech-button-arrow-7" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/games.png">
-                                <li>Gry</li>
-                                <img class="tech-button-arrow-8" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/RTV.png">
-                                <li>RTV i Telewizory</li>
-                                <img class="tech-button-arrow-9" src="images/arrow.png">
-                            </button> 
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/camera.png">
-                                <li>Foto i Kamery</li>
-                                <img class="tech-button-arrow-10" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/AGD.png">
-                                <li>AGD</li>
-                                <img class="tech-button-arrow-11" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/sport.png">
-                                <li>Sport i Rekreacja</li>
-                                <img class="tech-button-arrow-12" src="images/arrow.png">
-                            </button>
-                            <button class="tech-button">
-                                <img class="tech-button-img" src="images/software.png">
-                                <li>Akcesoria Komputerowe</li>
-                                <img class="tech-button-arrow-13" src="images/arrow.png">
-                            </button>
-                        </nav> 
-                    </ul>
-                    <div class="slider">
-                        <div class="slide">    
-                            <img class="image-1" src="images/sklep-baner-1.jpg" >
+                    <img class="xkom-img" src="images/xkom-img.png">
+                </section>
+                <section class="main-section-3">
+                    <div class="hr-space">
+                        <hr class="hr-recommend">
+                    </div>    
+                    <div class="flex">
+                        <h2 class="recommend">Polecamy</h2>
+                    </div>
+                    <div class="recommend-items">
+                        <div>
+                            <p class="recommend-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
-                    </div>     
+                        <nav>
+                            <div class="recommend-div">
+                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-1.png"></button>
+                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-2.png"></button>
+                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-3.png"></button>
+                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-4.png"></button>
+                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-5.png"></button>
+                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-6.png"></button>
+                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-7.png"></button>
+                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-8.png"></button>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="hr-space">
+                        <hr class="hr-recommend">
+                    </div>
                 </section>
             </main>  
         </div>
