@@ -154,8 +154,8 @@
                 <section >
                     <nav class="main-section-1">
                         <button class="btn2 other-buttons">Promocje</button>
+                        <button class="btn2 other-buttons">Polecamy</button>
                         <button class="btn2 other-buttons">Outlet</button>
-                        <button class="btn2 other-buttons">Gazetka</button>
                         <button class="btn2 other-buttons">Kariera</button>
                     </nav>
                 </section>      
@@ -164,33 +164,136 @@
                 </section>
                 <section class="main-section-3">
                     <div class="hr-space">
-                        <hr class="hr-recommend">
+                        <hr class="hr-promotion">
                     </div>    
-                    <div class="flex">
-                        <h2 class="recommend">Polecamy</h2>
+                    <div class="promotion-flex-spacebetween">
+                        <h2 class="h2-promotion">Promocje</h2>
+                        <button class="btn-show-all promotion-show-all"><b style="font-size: 0.75rem;">pokaż wszystko &rarr;</b></button>
                     </div>
-                    <div class="recommend-items">
-                        <div>
-                            <p class="recommend-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="promotion-items">
+                        <div id="timer-design">
+                            <img class="sale-img" src="images/sale-img.png">
+                            <p class="text-promotion-end">Promocja kończy się za:</p>
+                            <div id="timer">24:00:00</div>
                         </div>
-                        <nav>
-                            <div class="recommend-div">
-                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-1.png"></button>
-                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-2.png"></button>
-                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-3.png"></button>
-                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-4.png"></button>
-                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-5.png"></button>
-                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-6.png"></button>
-                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-7.png"></button>
-                                <button class="recommend-button"><img class="recommend-img" src="images/xkom-img-8.png"></button>
+                        <nav style="padding-left: 50px;">
+                            <div class="promotion-div">
+                                <button class="promotion-button">
+                                    <img class="promotion-img" src="images/xkom-img-1.png">
+                                    <p>Samsung Galaxy S23 8/256GB...</p>
+                                    <hr>
+                                        <s style="font-size: 0.8rem"><span style="color: rgb(77, 68, 68); font-size: 0.95rem;">4 799,00 zł</span></s>
+                                        <p class="promotion-font" style="font-size: 1.1rem;">4 399,00 zł</p>
+                                    </hr>
+                                </button>
+                                <button class="promotion-button"><img class="promotion-img" src="images/xkom-img-2.png">
+                                    <p>Xiaomi POCO X5 Pro 5G 8/256...</p>
+                                    <hr>
+                                        <s style="font-size: 0.8rem"><span style="color: rgb(77, 68, 68); font-size: 0.95rem;">1 799,00 zł</span></s>
+                                        <p class="promotion-font" style="font-size: 1.1rem;">1 499,00 zł</p>
+                                    </hr>
+                                </button>
+                                <button class="promotion-button"><img class="promotion-img" src="images/xkom-img-3.png">
+                                    <p>Canon EOS R50 + RF-S 18-45mm...</p>
+                                    <hr>
+                                        <s style="font-size: 0.8rem"><span style="color: rgb(77, 68, 68); font-size: 0.95rem;">3 999,00 zł</span></s>
+                                        <p class="promotion-font" style="font-size: 1.1rem;">3 299,00 zł</p>
+                                    </hr>
+                                </button>
+                                <button class="promotion-button"><img class="promotion-img" src="images/xkom-img-4.png">
+                                    <p>Samsung 2TB 2,5" SATA SSD...</p>
+                                    <hr>
+                                        <s style="font-size: 0.8rem"><span style="color: rgb(77, 68, 68); font-size: 0.95rem;">579,00 zł</span></s>
+                                        <p class="promotion-font" style="font-size: 1.1rem;">529,00 zł</p>
+                                    </hr>
+                                </button>
+                                <button class="promotion-button"><img class="promotion-img" src="images/xkom-img-5.png">
+                                    <p>Intel Core i5-12600K</p>
+                                    <hr>
+                                        <s style="font-size: 0.8rem"><span style="color: rgb(77, 68, 68); font-size: 0.95rem;">1 249,00 zł</span></s>
+                                        <p class="promotion-font" style="font-size: 1.1rem;">1 099,00 zł</p>
+                                    </hr>
+                                </button>
+                                <button class="promotion-button"><img class="promotion-img" src="images/xkom-img-6.png">
+                                    <p>Samsung QE55S90C</p>
+                                    <hr>
+                                        <s style="font-size: 0.8rem"><span style="color: rgb(77, 68, 68); font-size: 0.95rem;">9 049,00 zł</span></s>
+                                        <p class="promotion-font" style="font-size: 1.1rem;">8 529,00 zł</p>
+                                    </hr>
+                                </button>
+                                <button class="promotion-button"><img class="promotion-img" src="images/xkom-img-7.png">
+                                    <p>Baseus Blade 20000mAh 2x USB-A...</p>
+                                    <hr>
+                                        <s style="font-size: 0.8rem"><span style="color: rgb(77, 68, 68); font-size: 0.95rem;">349,00 zł</span></s>
+                                        <p class="promotion-font" style="font-size: 1.1rem;">319,00 zł</p>
+                                    </hr>
+                                </button>
+                                <button class="promotion-button"><img class="promotion-img" src="images/xkom-img-8.png">
+                                    <p>Logitech G PRO X GAMING...</p>
+                                    <hr>
+                                        <s style="font-size: 0.8rem"><span style="color: rgb(77, 68, 68); font-size: 0.95rem;">499,00 zł</span></s>
+                                        <p class="promotion-font" style="font-size: 1.1rem;">429,00 zł</p>
+                                    </hr>
+                                </button>
                             </div>
                         </nav>
                     </div>
                     <div class="hr-space">
-                        <hr class="hr-recommend">
+                        <hr class="hr-promotion">
                     </div>
+                    <script>
+                        // Pobieramy element licznika
+                        var timerElement = document.getElementById("timer");
+                    
+                        // Ustawiamy początkową wartość licznika na 24 godziny (86400 sekund)
+                        var count = 86400;
+                    
+                        // Funkcja, która aktualizuje wartość licznika co sekundę
+                        function updateTimer() {
+                          var hours = Math.floor(count / 3600);
+                          var minutes = Math.floor((count % 3600) / 60);
+                          var seconds = count % 60;
+                    
+                          // Formatujemy wartości godzin, minut i sekund do postaci HH:MM:SS
+                          var timeString = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+                    
+                          // Aktualizujemy wartość licznika na stronie
+                          timerElement.innerHTML = timeString;
+                    
+                          // Zmniejszamy wartość licznika o 1 sekundę
+                          count--;
+                    
+                          // Jeśli licznik osiągnął wartość 0, zatrzymujemy odliczanie
+                          if (count < 0) {
+                            clearInterval(timerInterval);
+                            timerElement.innerHTML = "Koniec!";
+                          }
+                        }
+                    
+                        // Funkcja, która dodaje zero przed liczbą, jeśli jest mniejsza niż 10
+                        function padZero(number) {
+                          return (number < 10) ? "0" + number : number;
+                        }
+                    
+                        // Wywołujemy funkcję updateTimer co sekundę (1000 milisekund)
+                        var timerInterval = setInterval(updateTimer, 1000);
+                      </script>
+                </section>
+                <section class="main-section-4">
+                    <h2 class="h2-recommend">Polecamy</h2>
+                    <nav>
+                        <div class="recommend-div">
+                            <button class="recomend-bestseller-button"><img class="bestseller-img" src="images/bestseller.png"></button>
+                            <button class="recommend-ourchoice-button"><img src="images/ourchoice.png" class="ourchoice-img"></button>
+                            <button class="recommend-newgames-button"><img class="newgames-img" src="images/newgames.png"></button>   
+                        </div>
+                    </nav>
                 </section>
             </main>  
-        </div>
+        <footer>
+            <nav class="footer">
+                
+            </nav>
+        </footer>
     </body>
 </html>
